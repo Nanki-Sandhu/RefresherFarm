@@ -1,0 +1,30 @@
+<% layout("/layouts/boilerplate") %>
+    <link rel="stylesheet" href="/css/connect.css">
+
+    <div class="outer">
+        <div class="connect">
+            <h1>Join our community today!</h1>
+            <div class="connectForm">
+                <form action="/farm/connect" method="POST">
+                    <div class="inputbox">
+                        <label for="name">Name :</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="phoneNumber">Phone Number :</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="inputbox">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="inputbox">
+                        <textarea name="msg" id="msg" rows="10"
+                            cols="60">Please let us know about your farm and food products you want to sell...</textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>

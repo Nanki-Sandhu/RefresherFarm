@@ -1,0 +1,239 @@
+/*It contains navbar and home page styling*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 60px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.flashOutter {
+    background-color: green;
+}
+
+/*-----Navbar-----*/
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    background-color: #6d9f33;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.4s;
+    z-index: 999;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    padding: 0 30px;
+    min-height: 60px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+.title p{
+    margin-left: 40px;
+}
+
+.logo i {
+    color: white;
+    font-size: 30px;
+}
+
+.nav {
+    transition: all 0.3s;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_item {
+    margin-right: 30px;
+}
+
+.nav_link {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.nav_link:hover {
+    background-color: #f4a40f;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 2px;
+    width: 27px;
+    background-color: white;
+    margin: 5px 0;
+    transition: all 0.3s;
+}
+
+.nav_open {
+    transform: translate(0) !important;
+}
+
+.hamburger_open .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger_open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger_open .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.cartbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 60px;
+    background-color: #f4a40f;
+}
+
+.cartbtn a i {
+    color: white;
+}
+
+.basket {
+    color: white;
+    margin-left: 10px;
+}
+
+@media (max-width:650px) {
+    .nav {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        background-color: #6d9f33;
+        padding: 10px 0 25px;
+        width: 100%;
+        transform: translate(-100%);
+    }
+
+    .nav_list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_item {
+        margin-bottom: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/*-----Home Page-----*/
+/*Image of home page*/
+.box {
+    height: 100vh;
+    border: 1px solid black;
+     background-image: url("https://images.unsplash.com/photo-1467453678174-768ec283a940?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/*Hours Section*/
+.hours {
+    text-align: center;
+    background-color: lightyellow;
+}
+
+.hours p {
+    color: darkgreen;
+    font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+
+/*About Us Section*/
+.aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgreen;
+}
+
+.aboutheading p {
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    color: #f4a40f !important;
+    text-align: center;
+}
+
+.aboutus img {
+    height: 500px;
+}
+
+.about p {
+    color: darkgreen;
+    line-height: 3rem;
+}
+
+/*Image Section*/
+.work {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: lightyellow;
+}
+
+.work img {
+    height: 500px;
+    width: 400px;
+    margin-right: 40px;
+}
+/*Last Div*/
+.quote{
+    background-image: url("https://plus.unsplash.com/premium_photo-1661281245863-811c2d10106b?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote p{
+   font-size: 50px;
+   color: darkgreen;
+   text-shadow: 0 5px 10px;
+}
+

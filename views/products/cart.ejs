@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate") %>
+    <link rel="stylesheet" href="/css/cart.css">
+
+    <div class="cartbox">
+        <div class="cart">
+            <h1>Cart</h1>
+            <% if(cart.items.length==0){%>
+                <h2 class="empty">Cart is Empty</h2>
+                <%} else{%>
+
+                    <% for(let i=0;i<cart.items.length;i++){ let eachItem=cart.items[i]; %>
+                        <div class="card">
+                            <form method="POST"
+                                action="/farm/cart/<%=id%>/delete/<%=eachItem.productId._id%>?_method=Delete">
+                                <button><i class="fa-solid fa-trash"></i></button>
+                            </form>
+                            <img src="<%=eachItem.productId.image%>" alt="food">
+                            <div class="card-text">
+                                <h3>
+                                    <%=eachItem.productId.title%>
+                                </h3>
+                                <span class="price">
+                                    $ <%=eachItem.productId.price%>/-
+                                </span>
+                                <span class="quantity">Qty-
+                                    <%=eachItem.quantity%>
+                                </span>
+                                <p>
+                                    <%=eachItem.productId.ingredients%>
+                                </p>
+
+                            </div>
+                        </div>
+                        <%}%>
+                            <% } %>
+                                <div class="total">Total: $<%=cart.totalPrice %>
+                                </div>
+                                <form method="POST" action="/farm/cart/<%=id%>/checkout%>?_method=Delete">
+                                    <button class="btn">Checkout</button>
+                                </form>
+
+        </div>
+    </div>

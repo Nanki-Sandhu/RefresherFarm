@@ -1,0 +1,81 @@
+.loginbox, .signupbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1543362906-acfc16c67564?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.signup{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 600px;
+    border-radius: 8px;
+    padding: 25px;
+}
+.login{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
+    width: 600px;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.inputbox {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 20px;
+    color: black;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0 15px;
+    color: black;
+}
+
+button {
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+  
+}
+button:hover {
+    transform: scale(1.03);
+    transition: .2s linear;
+    background-color: transparent;
+    border: 2px solid orange;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.loginlink:hover{
+   text-decoration: underline white;
+}

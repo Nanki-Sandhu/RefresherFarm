@@ -1,0 +1,108 @@
+.outer {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/*heding*/
+.foodTruck {
+    height: 400px;
+    background-image: url("../images/market-1558658_1280\ \(2\).jpg");
+    top: 60px;
+}
+
+/*Event*/
+.event {
+    margin-top: 40px;
+    margin-left: 80px;
+}
+
+.event p {
+    color: #6d9f33;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 40px;
+}
+
+.cursive {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.event .head {
+    font-size: 40px;
+}
+
+.event .cursive {
+    color: red;
+    font-size: 25px;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Event details*/
+.eventDetails {
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.giggles img {
+    width: 300px;
+    height: 400px;
+    margin-left: 40px;
+}
+
+.giggles2 img {
+    width: 300px;
+    height: 400px;
+    margin-left: 20px;
+}
+
+/*Sale*/
+.sale {
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.saleText p {
+    font-size: 70px;
+    margin-right: 200px;
+    color: Red;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    animation: animate 1s linear infinite;
+}
+
+.salepic img {
+    width: 700px;
+    height: 400px;
+    margin-right: 20px;
+    right: 20px;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

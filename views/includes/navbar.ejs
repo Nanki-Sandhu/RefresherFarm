@@ -1,0 +1,50 @@
+<header class="header">
+    <div class="header_content">
+        <div class="title">
+            <a class="logo"><i class="fa-solid fa-tractor"></i></a>
+            <p>Refreshers</p>
+        </div>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item">
+                    <a class="nav_link" href="/farm">Home</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="/farm/shop">Shop</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="/farm/events">Events</a>
+                </li>
+                <li class="nav_item">
+                    <a class="nav_link" href="/farm/connect">Connect</a>
+                </li>
+                <% if(!currUser){%>
+                    <li class="nav_item">
+                        <a class="nav_link" href="/signup"><i class="fa-regular fa-user account"></i></a>
+                    </li>
+                    <%}%>
+                        <% if(currUser){%>
+                            <li class="nav_item">
+                                <a class="nav_link" href="/logout">Logout</a>
+                            </li>
+                            <%}%>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="cartbtn">
+            <div><a href="/farm/cart"><i class="fa-solid fa-cart-shopping"></i></a></div>
+            <div class="basket">
+                <%=l%>
+            </div>
+        </div>
+
+    </div>
+</header>
+<script>
+    let basket = document.querySelector(".basket");
+
+</script>

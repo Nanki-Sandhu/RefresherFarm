@@ -1,0 +1,46 @@
+
+.success,
+.error {
+    border: 1px solid black;
+    height: 50px;
+    width: 500px;
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.success-text,
+.error-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.success{
+    background-color: lightgreen;
+}
+.error {
+    background-color:#ffdb9b;
+}
+
+.flash,
+.icon {
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.flash{
+    left: 20px;
+}
+.mark{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+.icon {
+    cursor: pointer;
+}
+
+.icon i {
+    color: black;
+}

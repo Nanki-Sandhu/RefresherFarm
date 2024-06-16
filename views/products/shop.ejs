@@ -1,0 +1,34 @@
+<% layout("/layouts/boilerplate") %>
+    <link rel="stylesheet" href="/css/shop.css">
+
+    <body>
+        <div class="container">
+            <div class="heading">
+                <div class="heading--overlay">
+                    <h1>Our Menu</h1>
+                </div>
+            </div>
+
+            <div class="box-container">
+                <% for(product of allproducts){%>
+                    <div class="card">
+                        <img src="<%=product.image%>" class="card-image" alt="Veggie Pizza">
+                        <div class="card-body">
+                            <p class="card-text title">
+                                <%=product.title%>
+                            </p>
+                            <p class="card-text">
+                                <%=product.ingredients%>
+                            </p>
+                            <p class="card-text">&#36;<%=product.price%>
+                            </p>
+                            <a href="/farm/cart/<%=product.id %>/add" class="btn">Add to cart</a>
+                        </div>
+                    </div>
+                    <% }%>
+            </div>
+        </div>
+
+    </body>
+
+    </html>
