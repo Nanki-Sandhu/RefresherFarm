@@ -29,7 +29,8 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const mongoUrl = "mongodb://127.0.0.1:27017/farm";
+//const mongoUrl = "mongodb://127.0.0.1:27017/farm";
+const dbUrl=process.env.ATLASDB_URL;
 
 main()
     .then(() => {
@@ -37,10 +38,10 @@ main()
     }).catch((err) => console.log(err));
 
 async function main() {
-    await mongoose.connect(mongoUrl);
+    await mongoose.connect(dbUrl);
 }
 const store = MongoStore.create({
-    mongoUrl: mongoUrl,
+    mongoUrl: dbUrl,
     crypto: {
         secret: process.env.SECRET,
     },
