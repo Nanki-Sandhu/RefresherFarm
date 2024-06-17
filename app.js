@@ -10,6 +10,7 @@ app.engine("ejs", ejsMate);
 
 const session = require("express-session");
 const MongoStore = require("connect-mongo");
+const dotenv=require("dotenv").config();
 const flash = require("connect-flash");
 
 const passport = require("passport");
